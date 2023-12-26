@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 120%;
+  background: #14063D;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+._container {
+  position: relative;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 100px;
+  box-sizing: content-box;
+}
+
+._container__carousel {
+  position: relative;
+  max-width: 1344px;
+  margin: 0 auto;
+  padding: 0 88px;
+  box-sizing: content-box;
+}
+
+@media (max-width: 992px) {
+  ._container {
+    padding: 0 15px;
+  }
+
+  ._container__carousel {
+    padding: 0 7px;
+  }
+}
+
+h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.blur {
+  position: absolute;
+  z-index: -100;
+  filter: blur(200px);
+  border-radius: 50%;
+}
+
+.main_blur__purple {
+  background-color: #800BF5;
+  width: 90%;
+  height: 75%;
+  bottom: 0;
+  left: -30%;
+  opacity: 0.6;
+}
+
+.main_blur__blue {
+  background-color: #04C3FF;
+  width: 60%;
+  height: 120%;
+  top: -40%;
+  right: -20%;
+  opacity: 0.4;
+}
+
+.just_rules__blur {
+  background-color: #800BF5;
+  width: 130%;
+  height: 120%;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.for-family__blur {
+  background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+  top: -20%;
+  right: -15%;
+  width: 60%;
+  height: 1200%;
+  opacity: 0.6;
+}
+
+.possibilities__blur-gradient {
+  background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+  top: 0;
+  left: -35%;
+  opacity: 0.8;
+  width: 68%;
+  height: 120%;
+}
+
+.possibilities__blur-purple {
+  background: #800BF5;
+  opacity: 0.9;
+  top: 0;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1280px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1140px) {
+  h2 {
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,58 @@
+.review {
+  margin-bottom: 56px !important;
+}
+
+.review__slide {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  padding: 56px;
+  overflow: hidden;
+  background: radial-gradient(97.45% 104.97% at 6.67% -4.97%, #800BF5 0%, rgba(128, 11, 245, 0.22822) 46.56%, rgba(128, 11, 245, 0.0799674) 63.12%, rgba(128, 11, 245, 0.0319667) 73.24%, rgba(128, 11, 245, 0) 85.56%);
+  border-radius: 24px;
+}
+
+.review__block {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.review__content {
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  gap: 80px;
+}
+
+.review__content p {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.review__user {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review__user span {
+  font-size: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.review__user div {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: #800BF5;
+  border-radius: 50%;
+}
+
+.review__user img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+}

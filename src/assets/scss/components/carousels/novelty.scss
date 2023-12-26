@@ -1,0 +1,20 @@
+.novelty {
+  margin-bottom: 96px;
+}
+
+.novelty__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px !important;
+}
+
+.novelty__slide {
+  position: relative;
+  padding: 0 12px;
+  border-radius: 24px;
+}
+
+.novelty__slide img {
+  width: 100%;
+}

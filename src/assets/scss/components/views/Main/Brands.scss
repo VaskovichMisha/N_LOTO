@@ -1,0 +1,26 @@
+.brands {
+  position: relative;
+  padding-bottom: 140px;
+  overflow: hidden;
+}
+
+.brand__bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brands__container {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.brands__container img {
+  width: 100%;
+  height: auto;
+}

@@ -14,7 +14,7 @@
 }
 
 .possibilities__title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 400;
@@ -30,7 +30,7 @@
 }
 
 .possibilities__number {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 120px;
   font-weight: 400;
   line-height: 100%;
@@ -44,7 +44,7 @@
 }
 
 .possibilities__content h3 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 40px;
   font-weight: 400;
 }
@@ -115,92 +115,73 @@
   .possibilities {
     margin-bottom: 110px !important;
   }
-
   .possibilities__block {
     gap: 20px;
   }
-
   .possibilities__title {
     font-size: 27px;
   }
-
   .possibilities__left {
     gap: 75px;
   }
-
   .possibilities__number {
     font-size: 92px;
   }
-
   .possibilities__content {
     gap: 20px;
   }
-
   .possibilities__content h3 {
     font-size: 30px;
   }
-
   .possibilities__content p {
     font-size: 16px;
   }
-
   .possibilities__right {
     border-radius: 22px;
   }
-
   .possibilities__abs {
     gap: 18px;
     padding: 0 52px;
   }
-
   .possibilities__abs div {
     gap: 15px;
   }
 }
-
 @media (max-width: 1140px) {
   .possibilities {
     margin-bottom: 100px !important;
   }
-
   .possibilities__block {
     gap: 18px;
   }
-
   .possibilities__title {
     font-size: 22px;
   }
-
   .possibilities__left {
     gap: 64px;
   }
-
   .possibilities__number {
     font-size: 80px;
   }
-
   .possibilities__content {
     gap: 16px;
   }
-
   .possibilities__content h3 {
     font-size: 25px;
   }
-
   .possibilities__content p {
     font-size: 14px;
   }
-
   .possibilities__right {
     border-radius: 20px;
   }
-
   .possibilities__abs {
     gap: 15px;
     padding: 0 42px;
   }
-
   .possibilities__abs div {
     gap: 12px;
   }
 }
+
+/*# sourceMappingURL=Possibilities.css.map */

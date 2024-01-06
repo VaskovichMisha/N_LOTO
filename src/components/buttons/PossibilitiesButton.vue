@@ -23,4 +23,18 @@ export default {
   justify-content: center;
   border-radius: 100px;
 }
+
+@media (max-width: 1280px) {
+  .possibilities__btn {
+    font-size: 14px;
+    padding: 16px 32px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .possibilities__btn {
+    font-size: 14px;
+    padding: 16px 32px;
+  }
+}
 </style>

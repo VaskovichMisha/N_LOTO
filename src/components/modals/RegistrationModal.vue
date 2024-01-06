@@ -5,7 +5,7 @@
         Welcome to
         <span>CTYPTOLOT</span>
       </div>
-      <div class="modal__title">Sign in</div>
+      <div class="modal__title">Sign up</div>
       <div class="modal__overflow">
         <div class="modal__apps">
           <a href="#" class="apps__google">
@@ -29,6 +29,24 @@
           >
             Enter your username or email address
           </InputModal>
+          <div
+              class="modal__more-inputs"
+          >
+            <InputModal
+                :placeholder="'User name'"
+                :type="'text'"
+                :id="'name'"
+            >
+              User name
+            </InputModal>
+            <InputModal
+                :placeholder="'Contact Number'"
+                :type="'number'"
+                :id="'number'"
+            >
+              Contact Number
+            </InputModal>
+          </div>
           <InputModal
               :placeholder="'Password'"
               :type="'password'"
@@ -37,22 +55,17 @@
             Enter your Password
           </InputModal>
         </div>
-        <div
-            class="modal__forgot-pass"
-        >
-          <a href="#">Forgot Password</a>
-        </div>
       </div>
       <div class="modal__foot">
         <div class="change__sign">
           <span>No Account ?</span>
           <button
-              @click="$emit('open-register')"
+              @click="$emit('open-auth')"
           >
-             Sign up
+            Sign in
           </button>
         </div>
-        <button class="modal__btn-login">Sign in</button>
+        <button class="modal__btn-login">Sign up</button>
       </div>
     </div>
   </div>
@@ -63,7 +76,6 @@ import InputModal from "@/components/inputs/InputModal.vue";
 
 export default {
   components: {InputModal}
-
 }
 </script>
 

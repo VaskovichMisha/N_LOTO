@@ -8,7 +8,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   line-height: 120%;
   background: #14063D;
   color: #fff;
@@ -58,26 +58,24 @@ button {
   ._container {
     padding: 0 15px;
   }
-
   ._container__carousel {
     padding: 0 7px;
   }
 }
-
 h2 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 120%;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -148,9 +146,10 @@ input[type="number"] {
     font-size: 32px;
   }
 }
-
 @media (max-width: 1140px) {
   h2 {
     font-size: 27px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

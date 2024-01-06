@@ -60,75 +60,62 @@
     height: 39vw;
   }
 }
-
 @media (max-width: 1280px) {
   .just_rules__carousel {
     margin: 64px auto 44px !important;
   }
-
   .just_rules__img {
     height: 37vw;
     border-radius: 22px;
   }
-
   .just_rules__slide-block {
     padding: 42px;
     font-size: 14px;
   }
-
   .just_rules__slide-block > div {
     gap: 20px;
     margin-bottom: 6px;
   }
-
   .just_rules__slide-block h3 {
     font-size: 27px;
   }
-
   .just_rules__slide-block span {
     width: 240px;
   }
-
   .just_rules__next-btn {
     width: 64px;
     height: 64px;
   }
 }
-
 @media (max-width: 1140px) {
   .just_rules__carousel {
     margin: 48px auto 40px !important;
   }
-
   .just_rules__img {
     height: 36vw;
     border-radius: 20px;
   }
-
   .just_rules__slide-block {
     padding: 36px;
     font-size: 12.5px;
   }
-
   .just_rules__slide-block > div {
     gap: 16px;
     margin-bottom: 5px;
   }
-
   .just_rules__slide-block h3 {
     font-size: 22px;
   }
-
   .just_rules__slide-block span {
     width: 210px;
   }
-
   .just_rules__next-btn {
     width: 56px;
     height: 56px;
   }
-
   .just_rules__next-btn img {
     width: 10px;
   }
 }
+
+/*# sourceMappingURL=Just_Rules_Carousels.css.map */

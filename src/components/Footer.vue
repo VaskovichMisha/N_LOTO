@@ -39,6 +39,15 @@
               <img src="../assets/svg/vk.svg" alt="">
             </button>
           </div>
+          <div class="footer__social__btn footer__social__btn--play">
+            <button>
+              <img src="../assets/svg/play-market.svg" alt="">
+              <div>
+                <span>Get it on</span>
+                <span>Google Play </span>
+              </div>
+            </button>
+          </div>
         </div>
         <div class="footer__support">
           <a href="#">support@cryptolot.org</a>

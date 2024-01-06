@@ -33,9 +33,8 @@ export default {
     return {
       options: {
         infinite: false,
-        slidesToShow: 1.2,
-        changeDelay: 600,
-        centerMode: true
+        slidesToShow: 1,
+        changeDelay: 50,
       }
     }
   },

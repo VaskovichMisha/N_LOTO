@@ -12,13 +12,15 @@
       >
         Что такое CryptoLot?
       </div>
-      <div
-          class="faq__summary"
-          :class="{'faq__summary--active': item.openDetails}"
-          v-if="item.openDetails"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, distinctio dolor doloremque ducimus, illo in laboriosam minima, non officiis quibusdam quis quos recusandae sed sit suscipit temporibus tenetur voluptatem! Quisquam.
-      </div>
+      <transition name="summary">
+        <div
+            class="faq__summary"
+            :class="{'faq__summary--active': item.openDetails}"
+            v-if="item.openDetails"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, distinctio dolor doloremque ducimus, illo in laboriosam minima, non officiis quibusdam quis quos recusandae sed sit suscipit temporibus tenetur voluptatem! Quisquam.
+        </div>
+      </transition>
     </div>
     <button
         @click="toggleDetails(item)"

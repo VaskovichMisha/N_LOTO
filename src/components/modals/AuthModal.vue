@@ -26,6 +26,7 @@
               :placeholder="'Username or email address'"
               :type="'text'"
               :id="'name_email'"
+              @enter-input-modal="enterLogin"
           >
             Enter your username or email address
           </InputModal>
@@ -33,6 +34,7 @@
               :placeholder="'Password'"
               :type="'password'"
               :id="'password'"
+              @enter-input-modal="enterPassword"
           >
             Enter your Password
           </InputModal>
@@ -52,7 +54,7 @@
              Sign up
           </button>
         </div>
-        <button class="modal__btn-login">Sign in</button>
+        <button @click="login" class="modal__btn-login">Sign in</button>
       </div>
     </div>
   </div>
@@ -62,8 +64,28 @@
 import InputModal from "@/components/inputs/InputModal.vue";
 
 export default {
-  components: {InputModal}
-
+  data() {
+    return {
+      dataLogin: {
+        login: '',
+        password: ''
+      }
+    }
+  },
+  methods: {
+    login() {
+      this.$store.dispatch('login', this.dataLogin)
+    },
+    enterLogin(inputData) {
+      this.dataLogin.login = inputData
+    },
+    enterPassword(inputData) {
+      this.dataLogin.password = inputData
+    },
+  },
+  components: {
+    InputModal
+  }
 }
 </script>
 

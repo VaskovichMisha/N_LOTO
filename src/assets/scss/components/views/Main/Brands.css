@@ -1,0 +1,49 @@
+.brands {
+  position: relative;
+  padding-bottom: 140px;
+  overflow: hidden;
+}
+
+.brand__bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  object-fit: cover;
+}
+
+.brands__container {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.brands__container img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1280px) {
+  .brands {
+    padding-bottom: 140px;
+  }
+  .brands__container {
+    margin-top: 16px;
+    gap: 20px;
+  }
+}
+@media (max-width: 1140px) {
+  .brands {
+    padding-bottom: 120px;
+  }
+  .brands__container {
+    margin-top: 14px;
+    gap: 18px;
+  }
+}
+
+/*# sourceMappingURL=Brands.css.map */

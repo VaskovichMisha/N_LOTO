@@ -38,5 +38,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/assets/scss/components/MainOffers";
+@import "../assets/scss/components/_mainOffers";
 </style>

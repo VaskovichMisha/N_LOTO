@@ -21,27 +21,27 @@
         <div class="footer__social">
           <div class="footer__social__btn">
             <button>
-              <img src="../assets/svg/telegram.svg" alt="">
+              <img src="../../../assets/svg/telegram.svg" alt="">
             </button>
           </div>
           <div class="footer__social__btn">
             <button>
-              <img src="../assets/svg/you%20tube.svg" alt="">
+              <img src="../../../assets/svg/you%20tube.svg" alt="">
             </button>
           </div>
           <div class="footer__social__btn">
             <button>
-              <img src="../assets/svg/ok.svg" alt="">
+              <img src="../../../assets/svg/ok.svg" alt="">
             </button>
           </div>
           <div class="footer__social__btn">
             <button>
-              <img src="../assets/svg/vk.svg" alt="">
+              <img src="../../../assets/svg/vk.svg" alt="">
             </button>
           </div>
           <div class="footer__social__btn footer__social__btn--play">
             <button>
-              <img src="../assets/svg/play-market.svg" alt="">
+              <img src="../../../assets/svg/play-market.svg" alt="">
               <div>
                 <span>Get it on</span>
                 <span>Google Play </span>
@@ -65,5 +65,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/assets/scss/components/Footer";
+@import "../../../assets/scss/components/views/Main/FooterMain";
 </style>

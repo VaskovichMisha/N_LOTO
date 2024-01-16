@@ -3,7 +3,8 @@
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
-
+  position: relative;
+  z-index: 1;
 }
 
 .carousel__btn {

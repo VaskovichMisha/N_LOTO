@@ -3,6 +3,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin: 50px 0 90px;
+  position: relative;
+  z-index: 1;
 }
 
 .main_offers__block {

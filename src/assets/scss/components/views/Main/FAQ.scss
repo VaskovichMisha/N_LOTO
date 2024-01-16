@@ -18,5 +18,34 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
 
+@media (max-width: 1280px) {
+  .faq {
+    gap: 36px;
+    margin-bottom: 72px;
+  }
+
+  .faq__title {
+    font-size: 28px;
+  }
+
+  .faq__container {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .faq {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .faq__title {
+    font-size: 24px;
+  }
+
+  .faq__container {
+    gap: 12px;
+  }
 }

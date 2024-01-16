@@ -1,0 +1,39 @@
+.select-options {
+    position: relative;
+    z-index: 70;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+
+    &__selected {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        gap: 12px;
+        cursor: pointer;
+
+        & svg {
+            transform: translateY(-3px) rotate(1deg);
+            transition: all 0.5s;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 0;
+        z-index: 50;
+    }
+
+    &__item {
+      cursor: pointer;
+    }
+}
+
+.rotate-180 {
+    transform: translateY(-3px) rotate(180deg) !important;
+    transition: all 0.5s;
+}

@@ -3,6 +3,10 @@
     <h2 class="faq__title">FAQ</h2>
     <div class="faq__container">
       <DetailsFaq />
+      <DetailsFaq />
+      <DetailsFaq />
+      <DetailsFaq />
+      <DetailsFaq />
     </div>
   </div>
 </template>

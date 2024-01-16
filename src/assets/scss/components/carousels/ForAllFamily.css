@@ -1,0 +1,25 @@
+.for-family {
+  margin-bottom: 96px;
+  position: relative;
+}
+
+.for-family__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.for-family__slide {
+  position: relative;
+  padding: 0 12px;
+  border-radius: 24px;
+}
+
+.for-family__slide img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=ForAllFamily.css.map */

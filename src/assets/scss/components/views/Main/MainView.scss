@@ -4,6 +4,8 @@
   line-height: 100%;
   width: 50%;
   padding: 110px 0 128px;
+  position: relative;
+  z-index: 1;
 }
 
 .main__title span {
@@ -13,10 +15,11 @@
 }
 
 .register__button {
-  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .register__button > img {
@@ -32,7 +35,7 @@
   position: absolute;
   top: 68px;
   right: 0;
-  z-index: -20;
+  z-index: 0;
   width: 70%;
 }
 

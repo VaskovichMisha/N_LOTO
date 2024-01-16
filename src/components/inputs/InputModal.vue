@@ -3,12 +3,22 @@
     <label :for="id">
       <slot />
     </label>
-    <input :type="type" :id="id" :placeholder="placeholder">
+    <input @input="enterInput" v-model="inputModal" :type="type" :id="id" :placeholder="placeholder">
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      inputModal: ''
+    }
+  },
+  methods: {
+    enterInput() {
+      this.$emit('enter-input-modal', this.inputModal)
+    }
+  },
   props: ['placeholder', 'type', 'id']
 }
 </script>

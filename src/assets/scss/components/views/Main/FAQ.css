@@ -1,0 +1,48 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.faq__title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 1280px) {
+  .faq {
+    gap: 36px;
+    margin-bottom: 72px;
+  }
+  .faq__title {
+    font-size: 28px;
+  }
+  .faq__container {
+    gap: 14px;
+  }
+}
+@media (max-width: 1140px) {
+  .faq {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  .faq__title {
+    font-size: 24px;
+  }
+  .faq__container {
+    gap: 12px;
+  }
+}
+
+/*# sourceMappingURL=FAQ.css.map */

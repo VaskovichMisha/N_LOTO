@@ -26,8 +26,9 @@
               :placeholder="'Username or email address'"
               :type="'text'"
               :id="'name_email'"
+              @enter-input-modal="enterName"
           >
-            Enter your username or email address
+            User name
           </InputModal>
           <div
               class="modal__more-inputs"
@@ -36,13 +37,15 @@
                 :placeholder="'User name'"
                 :type="'text'"
                 :id="'name'"
+                @enter-input-modal="enterLogin"
             >
-              User name
+              Login
             </InputModal>
             <InputModal
                 :placeholder="'Contact Number'"
                 :type="'number'"
                 :id="'number'"
+                @enter-input-modal="enterPhone"
             >
               Contact Number
             </InputModal>
@@ -51,6 +54,7 @@
               :placeholder="'Password'"
               :type="'password'"
               :id="'password'"
+              @enter-input-modal="enterPassword"
           >
             Enter your Password
           </InputModal>
@@ -65,7 +69,7 @@
             Sign in
           </button>
         </div>
-        <button class="modal__btn-login">Sign up</button>
+        <button @click="registration" class="modal__btn-login">Sign up</button>
       </div>
     </div>
   </div>
@@ -75,7 +79,37 @@
 import InputModal from "@/components/inputs/InputModal.vue";
 
 export default {
-  components: {InputModal}
+  data() {
+    return {
+      dataRegistration: {
+        name: '',
+        password: '',
+        login: '',
+        phone: '',
+      }
+    }
+  },
+  methods: {
+    enterName(inputData) {
+      this.dataRegistration.name = inputData
+      console.log(this.dataRegistration)
+    },
+    enterLogin(inputData) {
+      this.dataRegistration.login = inputData
+    },
+    enterPhone(inputData) {
+      this.dataRegistration.phone = inputData
+    },
+    enterPassword(inputData) {
+      this.dataRegistration.password = inputData
+    },
+    registration() {
+      this.$store.dispatch('registration', this.dataRegistration)
+    }
+  },
+  components: {
+    InputModal
+  },
 }
 </script>
 

@@ -1,14 +1,16 @@
 <template>
-  <MainView @open-modal="$emit('open-modal')" />
-  <JustRules />
-  <Winners />
-  <Novelty />
-  <ForAllFamily />
-  <ForSmart />
-  <Possibilities @open-modal="$emit('open-modal')" />
-  <Review />
-  <FAQ />
-  <Brands />
+  <main>
+    <MainView @open-modal="$emit('open-modal')" />
+    <JustRules />
+    <Winners />
+    <Novelty />
+    <ForAllFamily />
+    <ForSmart />
+    <Possibilities @open-modal="$emit('open-modal')" />
+    <Review />
+    <FAQ />
+    <Brands />
+  </main>
 </template>
 
 <script>

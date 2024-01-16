@@ -1,0 +1,139 @@
+.details-faq {
+  display: flex;
+  width: 100%;
+  position: relative;
+  color: #14063D;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 48px;
+    height: 96px;
+    cursor: pointer;
+    transition: all 0.7s;
+    border-radius: 56px;
+    background: linear-gradient(90deg, #00C2FF 0%, rgba(73, 203, 244, 0.00) 100%);
+    backdrop-filter: blur(28px);
+
+    &.active {
+      border-radius: 56px 56px 0 0;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.7s;
+    border-radius: 56px;
+    background: linear-gradient(90deg, #00C2FF 0%, rgba(73, 203, 244, 0.00) 100%);
+    backdrop-filter: blur(28px);
+
+    & div {
+      padding: 36px 48px;
+    }
+
+    &.active {
+      max-height: 700px;
+      transition: all 0.7s;
+      border-radius: 0 0 56px 56px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    height: 96px;
+    border-radius: 136px;
+    background: var(--blue, #49CBF4);
+    backdrop-filter: blur(28px);
+    flex-shrink: 0;
+
+
+    & img {
+      width: 24px;
+      height: 24px;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .details-faq {
+    font-size: 17px;
+
+    &__summary {
+      padding: 0 40px;
+      height: 80px;
+      border-radius: 48px;
+
+      &.active {
+        border-radius: 48px 48px 0 0;
+      }
+    }
+
+    &__content {
+      border-radius: 48px;
+
+      & div {
+        padding: 30px 40px;
+      }
+
+      &.active {
+        border-radius: 0 0 48px 48px;
+      }
+    }
+
+    &__btn {
+      width: 84px;
+      height: 80px;
+
+      & img {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .details-faq {
+    font-size: 15px;
+
+    &__summary {
+      padding: 0 34px;
+      height: 68px;
+      border-radius: 40px;
+
+      &.active {
+        border-radius: 40px 40px 0 0;
+      }
+    }
+
+    &__content {
+      border-radius: 40px;
+
+      & div {
+        padding: 24px 34px;
+      }
+
+      &.active {
+        border-radius: 0 0 40px 40px;
+      }
+    }
+
+    &__btn {
+      width: 72px;
+      height: 68px;
+
+      & img {
+        width: 16px;
+      }
+    }
+  }
+}

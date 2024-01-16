@@ -29,5 +29,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/components/Header";
+@import "../../../assets/scss/components/views/Main/HeaderMain";
 </style>
